@@ -9,6 +9,7 @@ export interface Post {
     name: string
     image: string
   }
+  comment: Comment[]
   description: string
   mainImage: {
     asset: {
@@ -16,4 +17,20 @@ export interface Post {
     }
   }
   body: [object]
+}
+
+export interface Comment {
+  _id: string
+  _rev: string
+  _type: string
+  _createdAt: string
+  _updatedAt: string
+  approved: string
+  comment: string
+  email: string
+  name: string
+  post: {
+    _ref: string
+    _type: string
+  }
 }
