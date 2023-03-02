@@ -1,5 +1,4 @@
 import { createClient } from 'next-sanity'
-// import {createCurrentUserHook} from 'next-sanity'
 import createImageUrlBuilder from '@sanity/image-url'
 
 const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID
@@ -18,7 +17,3 @@ export const config = {
 export const sanityClient = createClient(config)
 
 export const urlFor = source => createImageUrlBuilder(config).image(source)
-
-// export const useCurrentUser = createCurrentUserHook({ projectId })
-
-// const data = await client.fetch(groq`*[]`)
