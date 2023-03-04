@@ -9,7 +9,7 @@ export interface Post {
     name: string
     image: string
   }
-  comment: Comment[]
+  comments: Comment[]
   description: string
   mainImage: {
     asset: {
@@ -25,7 +25,7 @@ export interface Comment {
   _type: string
   _createdAt: string
   _updatedAt: string
-  approved: string
+  approved: boolean
   comment: string
   email: string
   name: string
