@@ -203,7 +203,7 @@ export const getStaticPaths: GetStaticPaths = async () => {
       slug: post.slug.current,
     },
   }))
-  console.log('paths', paths)
+  // console.log('paths', paths)
   return {
     paths,
     fallback: 'blocking',
@@ -238,7 +238,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       notFound: true,
     }
   }
-  console.log(post)
+  // console.log(post)
   return {
     props: {
       post,
